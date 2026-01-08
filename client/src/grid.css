@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.cards {
+    width: 10rem;
+    height: 10rem;
+    background-color: darkgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 20px
+}
+
+.backIcon {
+    font-size: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flipped {
+    border: 5px solid transparent;
+    transform: rotateY(180deg);
+    transition: transform 1s ease;
+}
+.cards.selected {
+    border: 5px solid orange;
+  }
+.notFlipped {
+    
+    transform: rotateY(0deg);
+    transition: transform 1s ease;
+}
